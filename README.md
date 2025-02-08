@@ -59,10 +59,9 @@
 
 ## 📸 Screenshots
 
-<div align="center">
-  <img src="<img width="1500" alt="Screenshot 2025-02-09 at 3 33 15 AM" src="https://github.com/user-attachments/assets/6c2928bc-3df6-4482-b23b-419379929696" />" alt="Light Mode" width="45%">
-  <img src="<img width="1512" alt="Screenshot 2025-02-09 at 3 32 55 AM" src="https://github.com/user-attachments/assets/5f46d575-f223-4393-b7dc-8d61b9dd34dc" />" alt="Dark Mode" width="45%">
-</div>
+<img width="1500" alt="Screenshot 2025-02-09 at 3 33 15 AM" src="https://github.com/user-attachments/assets/a021d71d-c8fd-4326-9ed3-24a16ed5e082" />
+
+<img width="1512" alt="Screenshot 2025-02-09 at 3 32 55 AM" src="https://github.com/user-attachments/assets/d524d559-1986-4b38-934b-045304f62f77" />
 
 ## 🌟 Key Features in Detail
 
