@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookShelf - Your Personal Library Companion</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-book-reader"></i>
+                <h1>BookShelf</h1>
+            </div>
+            <div class="nav-controls">
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Search books...">
+                    <button id="searchBtn"><i class="fas fa-search"></i></button>
+                </div>
+                <button id="darkModeToggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="library-dashboard" id="library-section">
+            <div class="reading-stats">
+                <div class="stat-card">
+                    <h3>Currently Reading</h3>
+                    <p id="currentlyReading">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Completed</h3>
+                    <p id="completed">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Want to Read</h3>
+                    <p id="wantToRead">0</p>
+                </div>
+            </div>
+
+            <div class="genre-filter">
+                <h3>Filter by Genre</h3>
+                <div class="genre-tags" id="genreTags">
+                    <!-- Genres will be added dynamically -->
+                </div>
+            </div>
+
+            <div class="book-shelf">
+                <h2>My Library</h2>
+                <div class="books-grid" id="booksGrid">
+                    <!-- Books will be added dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <section class="recommendations">
+            <h2>Recommended for You</h2>
+            <div class="recommendations-grid" id="recommendationsGrid">
+                <!-- Recommendations will be added dynamically -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Add Book Modal -->
+    <div class="modal" id="addBookModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add New Book</h2>
+            <form id="addBookForm">
+                <input type="text" id="bookTitle" placeholder="Book Title" required>
+                <input type="text" id="bookAuthor" placeholder="Author" required>
+                <select id="bookStatus" required>
+                    <option value="reading">Currently Reading</option>
+                    <option value="completed">Completed</option>
+                    <option value="wantToRead">Want to Read</option>
+                </select>
+                <input type="number" id="readProgress" placeholder="Reading Progress (%)">
+                <button type="submit">Add Book</button>
+            </form>
+        </div>
+    </div>
+
+    <button class="fab" id="addBookBtn"><i class="fas fa-plus"></i></button>
+
+    <script src="config.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
